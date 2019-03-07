@@ -1,0 +1,448 @@
+import random
+import time
+print("it's better to play on full window")
+print()
+print()
+print()
+print()
+print()
+print("Welcome this is a choose your own adventure game so throught the game you need to make decisions making certain decisions will result in different outcomes to the story, when there is a blank space you must enter your answer there. Are you ready to play?")
+Game_start = input()
+
+if Game_start == "no":
+    print("Well too bad.")
+print("Game Start")
+print()
+print("First choose a name")
+Character_Name = input()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+
+
+
+print("Hi",Character_Name,"Welcome back now let's get started,you remeber how to play don't you?")
+input()
+print("well doesn't matter I'll explain the rules anyways")
+print()
+print("Rule 1 : When given choices use the values or keys provided otherwise it wont work")
+print()
+print("Rule 2 : when choosing paths use the number provided, example- if you want to go on path 1 then choose 1, if you want to go on path 3 choose 3 and so on")
+print()
+print("Rule 3 : ")
+print()
+print("Rule 4 : Use lowercase when typing your answer")
+print()
+print("Rule 5 : Something unqiue is you are able to go back to change some outcomes,except that some actions are unable to be changed")
+print()
+print("Rule 6 : Beware it's around")
+print()
+print()
+print()
+print()
+print("So",Character_Name,"with the rules out of the way let's get started")
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print("  You wake up with a headache, not being able to remember what just happened or where you are, there is a dim light in the corner, you start to look around for clues and you stumble across a warn out box do you (1)open it or (2)leave it be")
+Choice_1 = input()
+
+#path with key and orb
+if Choice_1 == "1":
+    print(" You open the box and come across a key and a not stating 'Hello and Welcome to the game you'll be able to get out of here if you can find the exit and defeat the enemies ahead it's not going to be an easy task every action has a consequence or a reward so choose carfully, PAX is watching'")
+    print()
+    print("Obtained purple orb from box")
+    Purple_orb = 1
+    print()
+    print("Obtained key from box")
+    key = 1
+    print()
+    print("You continued searching for clues and came across a hall with two door one on the (1)right and one on the (2)left, which one will you choose?")
+    Door_choice_1 = input()
+    
+
+
+    if Door_choice_1 == "1":
+        print("The door was locked but you have a key, try key on door ? 1(yes) or 2(no)")
+        Door_choice_confirm = input()
+
+        
+
+
+        if Door_choice_confirm== "1" :
+            print("The door unlocked but the key broke so you move on")
+            print()
+            key = "0"
+            if key == "0":
+                print("you have no keys")
+            print("You continue walking forward and come across two hallways one with a dim light at the end(1) and the other with no light at all(2) which will you choose or will you turn back(3) and take the other door")
+            Path_choice = input()
+
+            if Path_choice == "1" :
+                print("you continued to the path with a dim light but as you take the first couple of steps you hear a roar and turn to see a wierd demon monster and it says 'I am Pax, you have distured my slumber and now you will pay the only way around me is if you give me that orb'")
+                print("will you give the orb to Pax(1) or will you try to run away(2)")
+                Run_or_Give = input()
+
+                
+                if Run_or_Give == "1" :
+                    print("You hand over the orb and he vanishes without a trace")
+                    orb = "0"
+                    print("without the orb you continue and come across a door with a shape of the orb you just handed away so you turn around and as you are about to walk forward a wall comes down and trappes you in then the floor opens")
+                    print("Game Over")
+                #Game Over
+                    
+                    
+                    
+                    
+                    
+                if Run_or_Give == "2" :
+                    print("you turn to run and follow the path then when you turn around you notice Pax is gone with a sigh of relief you stop to catch your breath when you notice that the light went out and you hear a low growl that said ' You can't run away from me' then you collapse on the ground that's when you notice feet walking twords you and Pax says 'Game Over'")
+                    print("Game Over")
+                    print("Replay door choice(1) or start Over(2) or quit(3)")
+                    Try_Again = input()
+
+                    if Try_Again == "1":
+                        print("You continued searching for clues and came across a hall with two door one on the (1)right and one on the (2)left, which one will you choose?")
+                        Door_choice_1 = input()
+
+                        if Door_choice_1 == "1":
+                            print("The door seems to be locked and you don't have a key so you go through the other door")
+                            Door_choice_1 = 2
+
+
+                        #replay without key 
+                        if Door_choice_1 == "2":
+                            print("You went throught the left door and kept walking")
+                            print()
+                            print("You walked around for what seemed like hours and came across a sign was scratched out but you were able to make out some of the words'",Character_Name," Welcome to the")
+
+                    #restart the game
+                    if Try_Again == "2":
+                        print("close the program and start the game again")
+                    
+                    #Game Over
+                    if Try_Again == "3":
+                        print("Thanks for Playing")
+    
+                            
+            if Path_choice == "2" :
+                print("With no light you continue to the dark path using the little you see to continue forward")
+                print("while walking you run into a door and notice the orb you have starts to glow and the door opens the orb starts blinking repeatedly so you walk forward and see that is blinks a bit faster")
+                print("You stop are come across a wall with odd patterns and a hole that looked like the shape of the orb will you put the orb in the hole(1) or look around for more clues(2)")
+                Choice_for_orb = input()
+
+                if Choice_for_orb == "1":
+                    print ("the orb slid right in and opened a door you continue on the path that is shown before you")
+                    print()
+                    orb = "0"
+                    if orb == "0":
+                        print("no orbs left")
+                    print("'you shouldn't have done that the orb was the only thing protecting you now i can go and come as i please'")
+                    print("As you heard that you noticed a figure charging at you from the dark with nowhere to go but back you turn to run but as you turn something grabs your leg it's Pax 'you're not going anywhere")
+                    print("you must win this battle if you want to escape")
+                    print("the charging figure stopped in front of you and Pax and Pax said 'if you beat him i'll let you go and you'll be one step closer to escaping")
+                    print()
+                    print("here are the rules")
+                    print("it's a turn based battle like an RPG")
+                    print("sheilding prevents any damage")
+                    print("you have 10 health")
+                    print("the enemy can only attack so don't worry if he blocks")
+                    print("your two options are to attack(1) or block(2)")
+                    print("with the basics out of the way let's get started")
+                    Player_Health = 10
+                    Enemy_Health = 20
+                    
+                    
+                    while Enemy_Health >= 0:
+                        Player_choice = input()
+                    
+
+                        if Player_choice == "1":
+                            print("you chose to attack")
+                            Player_Damage = random.randint(5,10)
+                            Damage = random.randint(0,3)
+                            Player_Health= Player_Health - Damage
+                            print("you have",Player_Health,"health")
+                            print("the enemy did", Damage, "damage")
+                            Enemy_Health = Enemy_Health - Player_Damage
+                            print("Enemy has ",Enemy_Health,"health")
+                            print("you did", Player_Damage, "damage")
+
+                        if Player_choice == "2":
+                            print("you took no damage")
+
+                        if Player_Health <= 0:
+                            print( "Game Over")
+
+
+                
+
+                        if Enemy_Health <= 0 :
+
+                            print("you defeated the enemy")
+                            print("With the enemy defeated Pax vanished and left behind a key")
+                            print("Key obtained")
+                            key = 1
+                            print("After you beat the enemy you continued wondering around till you reached a door that is locked you use the new key you obtained on the door")
+                            print("you go throught the door and there see a bright room but nothing in it you enter the room and the door slams behind you 'You might have beat that weak husk but you won't beat me' said a voice")
+                            print("Just then Pax comes bursting in throught the ceiling 'now it's my turn'")
+                            print("Final boss if you beat him you escape")
+                            print("this battle will be just like the last but he has more health and does more damage and know you have 15 health and can do between 5 to 10 damage, Good Luck")
+                            Player_Health = 15
+                            Pax_Health = 40
+                    
+                    
+                            while Enemy_Health >= 0:
+                                Player_choice = input()
+                    
+
+                                if Player_choice == "1":
+                                    print("you chose to attack")
+                                    Player_Damage = random.randint(5,10)
+                                    Pax_Damage = random.randint(2,8)
+                                    Player_Health= Player_Health - Pax_Damage
+                                    print("you have",Player_Health,"health")
+                                    print("Pax did", Damage, "damage")
+                                    Pax_Health = Pax_Health - Player_Damage
+                                    print("Pax has ",Pax_Health,"health left")
+                                    print("you did", Player_Damage, "damage")
+
+                                if Player_choice == "2":
+                                    print("you took no damage")
+
+                            if Player_Health <= 0:
+                                print( "Game Over")
+
+
+                            if Pax_Health <= 0:
+                                print("With the final blow Pax falls to the ground and suddenly your vision starts to get blurry and when you open your eyes again you see that you are in bed you check the time and it's 5AM so you relax and think what that could have been it seemed to real to be a dream")
+                                print("You think it's best to just forget about it and go back to sleep")
+                                print("You win")
+                            
+                            
+                    
+
+
+
+
+            if Path_choice == "3":
+                print("you turn back and go through the other door")
+                print()
+                print("You walked around for a while till you reached a wall with a sigh that read dead end so you turn around and as you do a wall comes slamming down before you and the floor slowly starts opening up and you fall then as you fall your vison starts to blury and you see nothing")
+                print()
+                print("you hear an alarm go off and you slowly start to open your eyes and see you are back home with a sigh of relief you get off of your bed and reach out for your phone and see you are late for school then as you walk through your bed room door you see a long dark hall looking similar to the hall you were just in before waking up then you turn around to see that your room was nothing but a mirage the phone in your had turns into a brick in your hand and you hear a voice saying 'it's not over yet, did you really think it would be as simple as a dream")
+                print("'let's continue this party shall we'")
+                print("As you heard that you noticed a figure charging at you from the dark with nowhere to go but back you turn to run but as you turn something grabs your leg it's Pax 'you're not going anywhere")
+                print("you must win this battle if you want to escape")
+                print("the charging figure stopped in front of you and Pax and Pax said 'if you beat him i'll let you go and you'll be one step closer to escaping")
+                print()
+                print("here are the rules")
+                print("it's a turn based battle like an RPG")
+                print("sheilding prevents any damage")
+                print("you have 10 health")
+                print("the enemy can only attack so don't worry if he blocks")
+                print("your two options are to attack(1) or block(2)")
+                print("with the basics out of the way let's get started")
+                Player_Health = 10
+                Enemy_Health = 20
+                    
+                    
+                while Enemy_Health >= 0:
+                    Player_choice = input()
+                    
+
+                    if Player_choice == "1":
+                        print("you chose to attack")
+                        Player_Damage = random.randint(5,10)
+                        Damage = random.randint(0,3)
+                        Player_Health= Player_Health - Damage
+                        print("you have",Player_Health,"health")
+                        print("the enemy did", Damage, "damage")
+                        Enemy_Health = Enemy_Health - Player_Damage
+                        print("Enemy has ",Enemy_Health,"health")
+                        print("you did", Player_Damage, "damage")
+
+                    if Player_choice == "2":
+                        print("you took no damage")
+
+                    if Player_Health <= 0:
+                         print( "Game Over")
+                         #Game Over
+                         
+                    if Enemy_Health <= 0:
+                        print("you defeated the enemy")
+                        print("'No it's not fair now it's my turn scum'")
+                        print("just then Pax came up to you and grabbed you 'will you fight me scum, didn't think so'")
+                        print("with you being held up in the air by pax you struggle to get out will you kick him (1) or will you punch him(2)")
+                        fight = input()
+
+                        if fight == "1":
+                            print("you kick him in the chest and he struggles for air while falling to the ground will you run(1) or kick hime again(2)")
+                            Kick_again_or_Run = input()
+
+                            if Kick_again_or_Run == "1":
+                                print()
+
+                            if Kick_again_or_Run == "2":
+                                print("You kick him again but harder and he falls straight on the floor you kick him a couple more times just to be sure and with him laying on the ground you check if he has a pulse but he has none you turn to walk away just then two doors appear one with an exit sigh above it(1) and another broken down door(2) which will you take")
+                                Final_choice = input()
+                                
+                                if Final_choice == "1":
+                                    print("You go through the exit door and you walk out into and see a bunch of trees it looks like you are in the forest and you hear people calling out in the distance", Character_Name, "where are you")
+                                    print("you hurry to the voices running and stumbling and you yell 'I'm here, wait up'")
+                                    print("As you get closer you see a familiar figure it's your brother 'Kevin i'm here help me' and your brother turn around, 'Oh my gosh",Character_Name,"where have you been we've been searching for you for 20 minutes, don't run off like that'")
+                                    print("'I'm sorry i won't do it again i promise'")
+                                    print("'So",Character_Name,"how was it'")
+                                    print("'How was what'")
+                                    print("T'he maze'")
+                                    print("'what do you mean'")
+                                    print("'it's not over yet'")
+                                    print("'Kevin what are you talking about'")
+                                    print("Just then Kevin gave you a smile and said 'there's no escape' then you noticed a shadow between the trees 'He followed you' your vision get's blurry and your brother says 'Pax is here'")
+                                    print("Game Over")
+                                    #Game Over
+                                    
+                                    
+
+                                if Final_choice == "2":
+                                    print("you walk through the door and wake up in your room and look at the time the clock reads 7:00 Am" ,Character_Name,"'your're going to be late wake up' you hurry downstairs and see breakfast on the table 'Hurry your're going to be late' you grab the breakfast and hurry outside to the bus stop all seems normal you get on the bus and just continue the day normally")
+                                    print("Game Over")
+                                    #Game Over
+
+
+                        if fight == "2":
+                            print("you wind up for a punch and hit him straight in the face he brushes it off like it was nothing and laughs in your face he drops you hard against the ground knocking the air out of your lungs then he drags you across the fall and says 'that was a mistake' you black out and the last thing you hear is don't worry you won't feel a thing'")
+                            print("Game Over")
+                            #Game Over      
+
+
+
+
+
+        if Door_choice_confirm == "2":
+            print("You chose to keep the key and go through the other door and keep the key")
+            key = key
+            print("You walked around for what seemed like hours and came across a sign was scratched out but you were able to make out some of the words'",Character_Name," Welcome to the")
+            print("You come across a door with the shape of an orb and you put the orb you have in the slot")
+            print("The door opens up and a long dark path appears ahead of you, so you continue forward, you reach a wall and look around to see that there is no way to go you take a step back and end up tripping and falling while on the ground you notice the ground is shaking and you open your eyes and see a beast charging at you, you have no choice but to fight it")
+            print("you have 15 health and the enemy has 30")
+            print("In order to attack press 1 and 2 is to shield and take no damage but you do no damage")
+            print("Ok go")
+            Player_Health = 15
+            Enemy_Health = 30
+                    
+                    
+            while Enemy_Health >= 0:
+                Player_choice = input()
+                    
+
+                if Player_choice == "1":
+                    print("you chose to attack")
+                    Player_Damage = random.randint(5,10)
+                    Damage = random.randint(1,5)
+                    Player_Health= Player_Health - Damage
+                    print("you have",Player_Health,"health")
+                    print("the enemy did", Damage, "damage")
+                    Enemy_Health = Enemy_Health - Player_Damage
+                    print("Enemy has ",Enemy_Health,"health")
+                    print("you did", Player_Damage, "damage")
+
+                if Player_choice == "2":
+                     print("you took no damage")
+
+                if Player_Health <= 0:
+                     print( "Game Over")
+                     #Game Over
+                         
+                if Enemy_Health <= 0:
+                    print("you beat whatever that thing was and it vanished right in front of your eyes without a trace")
+                    print("After you beat it you continued wondering around till you reached a door that was locked will you (1) use the key or (2) turn back")
+                    key_choice = input()
+
+
+                    if key_choice == "1":
+                        print("You used the key and walked through the door to find yourself in a small broken down house it seemed that no one was here so you walked out the front door and saw a forest and some people they called out '",Character_Name,"where are you")
+                        print("you replied with I'm here turn around")
+                        print("they turned around and ran to you'", Character_Name, "where were you, we have been looking all over for you it's been 2 hours'")
+                        print("I'm sorry i got lost and you proceed to tell them what happened")
+                        print("'Are you ok?' they asked so you turn around to show them the house and it's gone so you say 'guess i must have been dreaming then' and they say ' let's just go home'")
+                        print("you return home and everything goes on as normal")
+                        print("The End")
+                        #Win
+
+
+
+                    if key_choice == "2":
+                        print("You turn around to walk back but just then a hand came down and lifted you off the ground then your vision went blurry")
+                        print("Game Over")
+                        #Game Over
+                    
+
+    if Door_choice_1 == "2":
+        print("You went throught the left door and kept walking")
+        print()
+        key = key
+        print("you come across what seems like a shadow will you(1) fight it or (2) run away")
+        No_choice_matters = input()
+        time.sleep(5)
+        print("'Your choice doesn't matter you won't be able to escape from here' as the figure says that he grabs you and tosses you across the hall as you get up to run the figure grabs you 'I am Pax you won't escape, I won't let you' and as he says that he knocks you out")
+        print("Game Over")
+        #Game Over
+
+
+
+
+
+
+
+#path with no key or orb
+if Choice_1 == "2":
+    print(" You left the box alone and continued searching for clues and came across a hall with two door one on the (1)right and one on the left(2), which one will you choose?")
+    Door_choice_1 = input()
+    
+
+    if Door_choice_1 == "1":
+        print("The door seems to be locked and you don't have a key so you go through the other door")
+        Door_choice_1 = 2
+        #end of this path goes to next path, Merges with the Door_choice_1 = 2 down below
+
+        if Door_choice_1 == "2":
+            print("You went throught the left door and kept walking")
+            print()
+            print("You walked around for what seemed like hours and came across a sign was scratched out but you were able to make out some of the words'",Character_Name," Welcome to the")
+            print("You come across a door with the shape of an orb you look to see if there is anthing around to match the shape but nothing in sight so you turn around to look for clues but just then a wall comes down and stops you form being able to go forward just then a figure appears behind you and says ' you wont be going anywhere' then your vision blurrys and you collaps")
+            print("Game Over")
+            #Game Over
+
+    if Door_choice_1 == "2":
+        print("You went throught the left door and kept walking")
+        print()
+        print("You walked around for what seemed like hours and came across a sign was scratched out but you were able to make out some of the words'",Character_Name," Welcome to the")
+        print("You come across a door with the shape of an orb you look to see if there is anthing around to match the shape but nothing in sight so you turn around to look for clues but just then a wall comes down and stops you form being able to go forward just then a figure appears behind you and says ' you wont be going anywhere' then your vision blurrys and you collaps")
+        print("Game Over")
+        #Game Over
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
